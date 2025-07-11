@@ -74,12 +74,12 @@ main > h2 {
   gap: 20px;
 }
 
-.temple img {
+figure img {
   height: 200px;
   width: 100%;
 }
 
-.temple figcaption {
+figure figcaption {
   color: rgb(9, 9, 75);
 }
 
