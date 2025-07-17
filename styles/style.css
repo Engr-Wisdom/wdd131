@@ -1,24 +1,14 @@
 :root {
   --primary-color: rgb(224, 37, 68);
   --secondary-color: white;
-  --font-family: "Arial";
+  --font-family: 'Roboto', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* header::after {
-  content: "";
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 20px solid green;
-  font-family: var(--font-family);
-} */
+} 
 
 header {
   background-color: var(--primary-color);
@@ -27,14 +17,12 @@ header {
   padding: 20px;
   border-bottom: 20px solid green;
   font-family: var(--font-family);
-  position: relative; /* Optional: helps for positioning pseudo-elements */
+  position: relative;
 }
 
 header::after {
   content: "";
 }
-
-
 
 main {
   margin: auto;
