@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(224, 37, 68);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 20px solid green;
+}
+
+main {
+  margin: auto;
+}
+
+.hero {
+  background-color: red;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 450px;
+}
+
+.data-cont, 
+.weather-cont {
+  background-color: white;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.data-cont {
+  top: 20px;
+  left: 40px;
+}
+
+.data-cont h2,
+.weather-cont h2 {
+  background-color: green;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  left: -20px;
+  top: 10px;
+  text-align: left;
+}
+
+.data,
+.weather {
+  padding: 80px 0px 20px 0px;
+}
+
+p {
+  padding-top: 10px;
+}
+
+.data p span,
+.weather p span {
+  font-weight: bold;
+}
+
+.weather-cont {
+  bottom: 20px;
+  right: 50px;
+}
+
+footer {
+  background-color: rgb(224, 37, 68);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+@media (max-width: 650px) {
+  .hero img {
+    height: 100%;
+  }
+
+  .data-cont,
+  .weather-cont {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
+  }
+
+  .data, .weather {
+    padding: 20px;
+  }
+
+  .data-cont h2,
+  .weather-cont h2 {
+    background-color: white;
+    color: black;
+    position: relative;
+    text-align: center;
+    left: 0
+}
+}
