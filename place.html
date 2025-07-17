@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore key facts about Madagascar including its area, population, capital city, language, weather conditions, and more.">
+    <meta name="author" content="Wisdom Emmanuel Effiong">
     <title>Document</title>
     <link rel="icon" href="images/temple8.webp">
     <link rel="stylesheet" href="styles/style.css">
@@ -14,7 +16,10 @@
 
     <main>
       <div class="hero">
-        <img src="images/temple8.webp" alt="">
+        <picture>
+          <source srcset="">
+          <img src="images/temple8.webp" alt="">
+        </picture>
 
         <div class="data-cont">
           <h2>Data</h2>
@@ -31,12 +36,18 @@
         </div>
 
         <div class="weather-cont">
-          <h2>Weather ⛅</h2>
+         <div class="text">
+           <h2>Weather</h2>
+           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <circle cx="22" cy="22" r="10" fill="#FFD93B"/>
+          <path d="M42 30c6.627 0 12 5.373 12 12S48.627 54 42 54H22c-6.627 0-12-5.373-12-12s5.373-12 12-12h2" fill="#90A4AE"/>
+          </svg>
+         </div>
           <div class="weather">
             <p id="temperature"><span>Temperature:</span> 10 °C</p>
             <p><span>Conditions:</span> Partly Cloudy</p>
             <p id="wind-speed"><span>Wind:</span> 5 km/h</p>
-            <p id="wind-chill"><span>Wind Chill:</span></p>
+            <p id="wind-chill"><span>Wind Chill:</span> 9.8 °C</p>
           </div>
         </div>
       </div>
