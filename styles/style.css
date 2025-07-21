@@ -140,7 +140,6 @@ svg {
 :root {
   --primary-color: rgb(224, 37, 68);
   --secondary-color: white;
-  --font-family: 'Roboto', sans-serif;
 }
 
 * {
