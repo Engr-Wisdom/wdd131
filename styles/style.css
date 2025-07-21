@@ -30,7 +30,7 @@ main {
 }
 
 .hero {
-  background-color: var();
+  background-color: var(--primary-color);
   position: relative;
 }
 
