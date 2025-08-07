@@ -5,9 +5,9 @@
   font-family: Arial;
 }
 
-/* body {
-  text-align: center;
-} */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 header,
 footer {
