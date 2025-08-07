@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a detailed review of your purchased product. Rate its performance, select useful features, and share your experience with optional comments and name.">
+    <meta name="author" name="Wisdom Effiong">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
+    <main>
+      <form action="review.html" method="get">
+        <div>
+          <p>Product Name</p>
+          <select name="select-product" id="select-product" required>
+            <option value="Choose a product" disabled selected>
+              Choose a Product ...
+            </option>
+          </select>
+        </div>
+
+        <div class="rate-container">
+          <p>Overall Rating</p>
+          <div class="rating">
+            <div class="star-container">
+              <label for="one" class="star">&star;</label>
+              <input type="radio" name="rate" id="one" required>           
+            </div>
+
+            <div class="star-container">
+              <label for="two" class="star">&star;</label>
+              <input type="radio" name="rate" id="two" required>           
+            </div>
+
+            <div class="star-container">
+              <label for="three" class="star">&star;</label>
+              <input type="radio" name="rate" id="three" required>           
+            </div>
+
+            <div class="star-container">
+              <label for="four" class="star">&star;</label>
+              <input type="radio" name="rate" id="four" required>           
+            </div>
+
+            <div class="star-container">
+              <label for="five" class="star">&star;</label>
+              <input type="radio" name="rate" id="five" required>           
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p>Date of Installation</p>
+          <input type="date" name="installation" id="install-date" required>
+        </div>
+
+        <div class="features-container">
+          <p>
+            Which features did you find useful in the product? (Check all that
+            apply)
+          </p>
+
+          <div class="features">
+            <input type="checkbox" name="features" id="durability" value="Durability">
+            <label for="durability">Durability</label>
+          </div>
+
+          <div class="features">
+            <input type="checkbox" name="features" id="ease-use" value="Ease of Use">
+            <label for="ease-use">Ease of Use</label>
+          </div>
+
+          <div class="features">
+            <input type="checkbox" name="features" id="performance" value="Performance">
+            <label for="performance">Performance</label>
+          </div>
+
+          <div class="features">
+            <input type="checkbox" name="features" id="design" value="Design">
+            <label for="design">Design</label>
+          </div>
+        </div>
+
+        <div class="review-container">
+          <p>Written Review <span>(Optional)</span></p>
+          <textarea name="review" id="review"></textarea>
+        </div>
+
+        <div class="username">
+          <p>Your Name <span>(Optional)</span></p>
+          <input type="text" name="name" id="user-name">
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Post Review" id="post-review">
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Wisdom Effiong ✅ Software Engineer ✅ Nigeria</p>
+      <p id="last-mod"></p>
+    </footer>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
