@@ -14,18 +14,6 @@
       <a href="form.html">Submit Another Review</a>
     </div>
 
-    <script>
-      // Get current count from localStorage, default to 0
-      let reviewCount = localStorage.getItem("reviewCount") || 0;
-      reviewCount++;
-
-      // Save the updated count back to localStorage
-      localStorage.setItem("reviewCount", reviewCount);
-
-      // Optionally show it on the page
-      document.getElementById(
-        "review-count"
-      ).textContent = `You have submitted ${reviewCount} review(s).`;
-    </script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
