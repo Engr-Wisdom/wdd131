@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Review Submitted</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <div class="review-cont">
-        <h1>Thank You!</h1>
-        <p>Your review has been submitted successfully</p>
-        <p>Total reviews submitted: <span id="count">0</span></p>
-        <a href="form.html">Submit Another Review</a>
+      <h1>Thank You!</h1>
+      <p>Your review has been submitted successfully</p>
+      <p>Total reviews submitted: <span id="count">0</span></p>
+      <a href="form.html">Submit Another Review</a>
     </div>
 
-    <script src="scripts/index.js" defer></script>
-</body>
+    <script>
+      // Get current count from localStorage, default to 0
+      let reviewCount = localStorage.getItem("reviewCount") || 0;
+      reviewCount++;
+
+      // Save the updated count back to localStorage
+      localStorage.setItem("reviewCount", reviewCount);
+
+      // Optionally show it on the page
+      document.getElementById(
+        "review-count"
+      ).textContent = `You have submitted ${reviewCount} review(s).`;
+    </script>
+  </body>
 </html>
