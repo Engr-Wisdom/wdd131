@@ -38,7 +38,7 @@ btn.addEventListener("click", (event) => {
       btn.classList.remove("active");
       setTimeout(() => {
         submitTxt.style.display = "none";
-      }, 3000);
+      }, 5000);
     }
   });
 });
