@@ -1,0 +1,25 @@
+.instruction {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+
+h3 {
+  border-bottom: 2px solid #f4a261;
+  padding: 5px 0;
+}
+
+section li {
+  margin: 20px 0;
+}
+
+h3, strong {
+  color: #1e3a5f;
+}
+
+main {
+  padding: 20px 0;
+}

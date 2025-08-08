@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wisdom Effiong">
+    <meta name="description" content="Discover breathtaking hiking trails, travel tips, and adventure guides to explore the world with our Adventure Travel Blog.">
+    <title>Adventure Travel Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Adventure Travel Blog</h1>
+      <nav>
+        <p id="menu-icon">&#9776;</p>
+        <ul>
+          <p id="remove-menu">&#128473;</p>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hiking-guide.html">Hiking Guides</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Explore the World</h2>
+      <p>
+        Your go-to resource for adventure travel guides, hiking tips, and
+        destination advice
+      </p>
+      <button>Start Your Journey</button>
+    </section>
+
+    <main>
+      <section class="features">
+        <h2>Featured Hiking Trails</h2>
+        <div id="box-cont">
+          <div class="box">
+            <img src="https://elilaw179.github.io/wdd131/project/images/yoh.webp" alt="Yosemite National Park" loading="lazy">
+            <figcaption>
+              <h3>Yosemite National Park</h3>
+              <p>
+                Experience breathtaking views on the Mist Trail and Half Dome.
+              </p>
+              <p class="hiking">Hiking</p>
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-data">
+        <h2>About My Data Integration</h2>
+        <p>
+          I used dynamically fetch data from a local JSON file to display hiking
+          guides and travel tips. This allows me to easily update and manage
+          content withoout hardcoding the information into the webpage. By
+          integrating this data my site provides up-to-date and relevant hiking
+          recommendation for adventure travelers.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Adventure Travel Blog |</p>
+      <p>
+        &copy; <span id="year"></span> Wisdom Effiong ✅ Software Engineer ✅
+        Nigeria
+      </p>
+      <p id="last-mod"></p>
+    </footer>
+
+    <script src="scripts/index.js" defer></script>
+  </body>
+</html>

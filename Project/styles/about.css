@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+main {
+  padding: 20px 0;
+}
+
+main section {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+  padding-bottom: 100px;
+  box-shadow: 2px 2px 5px rgb(194, 194, 194);
+}
+
+div {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+div p {
+  margin-top: 10px;
+}
+
+.about-data {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(231, 229, 229);
+  padding: 30px 10px;
+  width: 100%;
+  border-left: 5px solid #f4a261;
+}
