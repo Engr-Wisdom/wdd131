@@ -71,6 +71,7 @@ button:hover {
   margin-top: 0;
   display: none;
   color: red;
+  font-size: 12px;
 }
 
 #submit-txt {
