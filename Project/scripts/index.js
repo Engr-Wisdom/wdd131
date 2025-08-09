@@ -22,16 +22,22 @@ if (boxCont) {
 
 function toggleNavBar() {
   let menuIcon = document.getElementById("menu-icon");
-  let ul = document.querySelector("ul");
+  let sideBar = document.querySelector("ul");
   let removeBtn = document.getElementById("remove-menu");
 
-  if (menuIcon && ul && removeBtn) {
+  if (menuIcon && sideBar && removeBtn) {
     menuIcon.addEventListener("click", () => {
-      ul.classList.toggle("show");
+      sideBar.classList.toggle("show");
     });
 
     removeBtn.addEventListener("click", () => {
-      ul.classList.toggle("show");
+      sideBar.classList.toggle("show");
+    });
+
+    document.addEventListener("click", event => {
+      if (!menuIcon.contains(event.target) && !sideBar.contains(event.target)) {
+        sideBar.classList.remove("show");
+      }
     });
   }
 }

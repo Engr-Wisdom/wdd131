@@ -54,16 +54,12 @@ button {
   border-radius: 5px;
   cursor: not-allowed;
   transition: ease 0.15s;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 button.active {
   opacity: 1;
   cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
 }
 
 .error-txt {
